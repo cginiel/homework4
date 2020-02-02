@@ -69,9 +69,13 @@ footer{
 }
 
 nav{
+  display: grid;
   background-color: #ddd;
   padding: 20px 0; 
   text-align: left;
+  grid-column: 1 / span all;
+  /* grid-column: 1 / -1; keeps nav centered */
+  grid-row: 1 / 1;
 
   /*Your code here*/
   /*Span the top row*/
@@ -79,12 +83,15 @@ nav{
 }
 
 header{
+  display: grid;
   background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
   color: #fff;
   height: 400px;                /* Parallax effect */
+  grid-column: 1 / span all;
+  grid-row: 2 / 1;
 
   /* Your code here */
   /* Set background-image to header.jpg in the images folder */
